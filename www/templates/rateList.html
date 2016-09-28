@@ -1,0 +1,20 @@
+<ion-view title="Page" id="page4">
+
+    <ion-content ion-content padding="true" class="has-header">
+
+      <div class="list">
+
+        <a ng-repeat="x in RateReply" 
+           href="#/{{item.id}}"
+           class="item item-thumbnail-left">
+
+         <img src="http://www.oconcany.com/images/fedex_logo.gif">
+          <h2>{{x.ServiceType[0]}}</h1>
+          <h4>$ {{x.RatedShipmentDetails[0].ShipmentRateDetail[0].TotalNetCharge[0].Amount[0]}}</h1>
+        </a>
+
+      </div>
+
+    </ion-content>
+</ion-view>
+

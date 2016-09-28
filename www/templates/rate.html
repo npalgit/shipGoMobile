@@ -1,0 +1,43 @@
+<ion-view title="Rate" id="page3">
+    <ion-content padding="true" class="has-header">
+	<div class="list list-inset login-form is-transparent">
+        <h1 id="rate-heading1" style="color:#000000;text-align:center;">Rate it!</h1>
+        <div class="spacer" style="width: 300px; height: 30px;"></div>
+		
+
+            <button id="rate-button1" class="button button-stable  button-block icon-left ion-location" ng-click="openFromAddress();">From Address</button>
+			<div ng-if="fromaddress" class="card">
+			  <div class="item item-text-wrap">
+				<pre>{{fromaddress1}}</pre>
+				<pre>{{fromaddress2}}</pre>
+				<pre>{{fromcountry}}</pre>
+				<pre>{{fromcity}}</pre>
+				<pre>{{fromstate}}</pre>
+				<pre>{{fromzip}}</pre>
+			  </div>
+			</div>
+            <button id="rate-button2" class="button button-stable  button-block icon-left ion-location" ng-click="openToAddress();">To Address</button>
+			<div ng-if="toaddress" class="card">
+			  <div class="item item-text-wrap">
+				<pre>{{toaddress1}}</pre>
+				<pre>{{toaddress2}}</pre>
+				<pre>{{tocountry}}</pre>
+				<pre>{{tocity}}</pre>
+				<pre>{{tostate}}</pre>
+				<pre>{{tozip}}</pre>
+			  </div>
+			</div>
+		</div>
+		
+		
+        <button id="rate-button3" class="button button-positive  button-block" ng-click="rate();">Rate it!</button>
+		
+		
+		
+	
+	<!-- End Login Form-->
+
+
+		
+    </ion-content>
+</ion-view>
